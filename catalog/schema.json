@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kestrel Connector Registry",
+  "type": "object",
+  "required": [
+    "catalog_version",
+    "updated",
+    "records"
+  ],
+  "properties": {
+    "catalog_version": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "vendor",
+          "category",
+          "summary",
+          "status",
+          "version",
+          "events",
+          "auth",
+          "docs"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "vendor": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "stable",
+              "beta",
+              "deprecated"
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "auth": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "docs": {
+            "type": "string"
+          },
+          "repository": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

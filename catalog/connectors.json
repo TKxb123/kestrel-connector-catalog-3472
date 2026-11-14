@@ -1,0 +1,557 @@
+{
+  "catalog_version": "4.2.0",
+  "updated": "2026-10-30",
+  "records": [
+    {
+      "id": "nimbus-s3-sync",
+      "name": "Nimbus S3 Sync Connector",
+      "vendor": "Nimbus Cloud Storage",
+      "category": "storage",
+      "summary": "Two-way sync for S3-compatible object stores with checksum verification.",
+      "status": "stable",
+      "version": "3.7.2",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "object.put",
+        "object.delete",
+        "object.restore",
+        "connector.health"
+      ],
+      "repository": "https://github.com/nimbus-cloud/nimbus-s3-sync"
+    },
+    {
+      "id": "riverbed-cdc",
+      "name": "Riverbed CDC Stream",
+      "vendor": "Riverbed Analytics",
+      "category": "streaming",
+      "summary": "Change-data-capture stream from PostgreSQL with ordered replay.",
+      "status": "stable",
+      "version": "2.9.0",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "cdc.insert",
+        "cdc.update",
+        "cdc.snapshot",
+        "connector.health"
+      ],
+      "repository": "https://github.com/riverbed-analytics/riverbed-cdc"
+    },
+    {
+      "id": "lattice-crm",
+      "name": "Lattice CRM Mirror",
+      "vendor": "Lattice Software",
+      "category": "crm",
+      "summary": "Bi-directional contact and pipeline mirroring for Lattice CRM.",
+      "status": "stable",
+      "version": "5.1.4",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "contact.upserted",
+        "pipeline.stage_changed",
+        "activity.logged",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "quarry-postgres",
+      "name": "Quarry Postgres Loader",
+      "vendor": "Quarry Data",
+      "category": "database",
+      "summary": "Bulk loader for PostgreSQL with schema drift detection.",
+      "status": "stable",
+      "version": "4.3.1",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "table.loaded",
+        "schema.drift_detected",
+        "row.rejected",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "beacon-sftp",
+      "name": "Beacon SFTP Intake",
+      "vendor": "Beacon Transfer",
+      "category": "file",
+      "summary": "Scheduled intake from SFTP drops with lineage tags.",
+      "status": "stable",
+      "version": "1.8.6",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "file.received",
+        "file.rejected",
+        "manifest.emitted",
+        "connector.health"
+      ],
+      "repository": "https://github.com/beacon-transfer/beacon-sftp"
+    },
+    {
+      "id": "cobalt-pubsub",
+      "name": "Cobalt Pub/Sub Tap",
+      "vendor": "Cobalt Messaging",
+      "category": "messaging",
+      "summary": "Subscription tap for Cobalt topics with replay control.",
+      "status": "stable",
+      "version": "2.2.0",
+      "auth": [
+        "service_account"
+      ],
+      "events": [
+        "message.published",
+        "subscription.paused",
+        "message.replayed",
+        "connector.health"
+      ],
+      "repository": "https://github.com/cobalt-messaging/cobalt-pubsub"
+    },
+    {
+      "id": "thistle-hris",
+      "name": "Thistle HRIS Sync",
+      "vendor": "Thistle People",
+      "category": "hr",
+      "summary": "Nightly employee and org-unit sync from Thistle HRIS.",
+      "status": "stable",
+      "version": "7.0.2",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "employee.upserted",
+        "org_unit.changed",
+        "termination.recorded",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "amber-inventory",
+      "name": "Amber Inventory Feed",
+      "vendor": "Amber Retail",
+      "category": "commerce",
+      "summary": "Real-time inventory deltas for Amber storefronts.",
+      "status": "beta",
+      "version": "0.9.5",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "stock.adjusted",
+        "stock.reserved",
+        "stock.released",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "vellum-contracts",
+      "name": "Vellum Contracts Reader",
+      "vendor": "Vellum Legal",
+      "category": "document",
+      "summary": "Read-only contract metadata extraction for Vellum workspaces.",
+      "status": "stable",
+      "version": "3.0.1",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "contract.ingested",
+        "clause.extracted",
+        "signature.status_changed",
+        "connector.health"
+      ],
+      "repository": "https://github.com/vellum-legal/vellum-contracts"
+    },
+    {
+      "id": "marigold-ads",
+      "name": "Marigold Ads Reporting",
+      "vendor": "Marigold Media",
+      "category": "marketing",
+      "summary": "Campaign spend and attribution pull for Marigold Ads.",
+      "status": "stable",
+      "version": "2.6.3",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "campaign.spend_reported",
+        "attribution.updated",
+        "creative.paused",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "sumac-payroll",
+      "name": "Sumac Payroll Export",
+      "vendor": "Sumac Finance",
+      "category": "finance",
+      "summary": "Payroll journal export with cost-center mapping.",
+      "status": "stable",
+      "version": "6.2.0",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "payroll.run_closed",
+        "journal.exported",
+        "cost_center.mapped",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "quartz-servicedesk",
+      "name": "Quartz Service Desk",
+      "vendor": "Quartz Support",
+      "category": "support",
+      "summary": "Ticket and SLA event mirroring for Quartz tenants.",
+      "status": "stable",
+      "version": "4.0.9",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "ticket.created",
+        "ticket.escalated",
+        "sla.breached",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "heron-warehouse",
+      "name": "Heron Warehouse Reader",
+      "vendor": "Heron BI",
+      "category": "warehouse",
+      "summary": "Incremental reads from Heron warehouse tables.",
+      "status": "stable",
+      "version": "3.4.0",
+      "auth": [
+        "service_account"
+      ],
+      "events": [
+        "partition.read",
+        "query.completed",
+        "permission.denied",
+        "connector.health"
+      ],
+      "repository": "https://github.com/heron-bi/heron-warehouse"
+    },
+    {
+      "id": "driftwood-tracker",
+      "name": "Driftwood Issue Tracker",
+      "vendor": "Driftwood Labs",
+      "category": "project",
+      "summary": "Issue and sprint sync for Driftwood projects.",
+      "status": "stable",
+      "version": "2.1.7",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "issue.transitioned",
+        "sprint.closed",
+        "comment.added",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "osprey-geo",
+      "name": "Osprey Geo Enricher",
+      "vendor": "Osprey Mapping",
+      "category": "geo",
+      "summary": "Reverse geocoding enrichment for address records.",
+      "status": "stable",
+      "version": "1.5.2",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "address.geocoded",
+        "geometry.validated",
+        "region.assigned",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "tempest-monitor",
+      "name": "Tempest Uptime Monitor",
+      "vendor": "Tempest Ops",
+      "category": "observability",
+      "summary": "Uptime probe ingestion from Tempest monitors.",
+      "status": "stable",
+      "version": "2.8.1",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "probe.failed",
+        "probe.recovered",
+        "incident.opened",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "willow-docs",
+      "name": "Willow Docs Indexer",
+      "vendor": "Willow Workspace",
+      "category": "document",
+      "summary": "Full-text index builder for Willow documents.",
+      "status": "beta",
+      "version": "0.7.4",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "doc.indexed",
+        "doc.unindexed",
+        "acl.changed",
+        "connector.health"
+      ],
+      "repository": "https://github.com/willow-workspace/willow-docs"
+    },
+    {
+      "id": "jasper-analytics",
+      "name": "Jasper Analytics Mirror",
+      "vendor": "Jasper Insights",
+      "category": "analytics",
+      "summary": "Dashboard snapshot replication from Jasper Analytics.",
+      "status": "stable",
+      "version": "5.3.0",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "dashboard.snapshot",
+        "metric.computed",
+        "report.shared",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "flint-cache",
+      "name": "Flint Cache Bridge",
+      "vendor": "Flint Systems",
+      "category": "cache",
+      "summary": "Write-through bridge for Flint distributed cache.",
+      "status": "stable",
+      "version": "1.9.3",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "cache.set",
+        "cache.invalidate",
+        "eviction.reported",
+        "connector.health"
+      ],
+      "repository": "https://github.com/flint-systems/flint-cache"
+    },
+    {
+      "id": "sapphire-billing",
+      "name": "Sapphire Billing Sync",
+      "vendor": "Sapphire Finance",
+      "category": "finance",
+      "summary": "Invoice and credit-note sync for Sapphire Billing.",
+      "status": "stable",
+      "version": "3.2.5",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "invoice.issued",
+        "credit_note.created",
+        "payment.settled",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "tundra-scm",
+      "name": "Tundra Supply Chain",
+      "vendor": "Tundra Logistics",
+      "category": "logistics",
+      "summary": "Shipment milestone feed from Tundra SCM.",
+      "status": "stable",
+      "version": "2.0.6",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "shipment.dispatched",
+        "milestone.reached",
+        "delay.flagged",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "cinder-auth",
+      "name": "Cinder Identity Feed",
+      "vendor": "Cinder Security",
+      "category": "identity",
+      "summary": "Directory event feed for Cinder identity tenants.",
+      "status": "stable",
+      "version": "4.6.0",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "user.provisioned",
+        "role.assigned",
+        "login.risk_flagged",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "pewter-queue",
+      "name": "Pewter Queue Drainer",
+      "vendor": "Pewter Systems",
+      "category": "queue",
+      "summary": "Drainer for Pewter message queues with dead-letter routing.",
+      "status": "stable",
+      "version": "0.8.2",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "queue.drained",
+        "message.dead_lettered",
+        "backlog.reported",
+        "connector.health"
+      ],
+      "repository": "https://github.com/pewter-systems/pewter-queue"
+    },
+    {
+      "id": "basalt-cdn",
+      "name": "Basalt CDN Logs",
+      "vendor": "Basalt Edge",
+      "category": "cdn",
+      "summary": "Edge log delivery from Basalt CDN distributions.",
+      "status": "stable",
+      "version": "1.2.9",
+      "auth": [
+        "service_account"
+      ],
+      "events": [
+        "request.logged",
+        "cache.miss",
+        "edge.redirect",
+        "connector.health"
+      ],
+      "repository": "https://github.com/basalt-edge/basalt-cdn"
+    },
+    {
+      "id": "coral-notify",
+      "name": "Coral Notify Dispatcher",
+      "vendor": "Coral Comms",
+      "category": "notification",
+      "summary": "Template-driven notification dispatch through Coral.",
+      "status": "stable",
+      "version": "2.4.1",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "notification.queued",
+        "notification.bounced",
+        "template.updated",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "granite-survey",
+      "name": "Granite Survey Collector",
+      "vendor": "Granite Research",
+      "category": "survey",
+      "summary": "Response ingestion for Granite survey campaigns.",
+      "status": "stable",
+      "version": "3.1.0",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "response.submitted",
+        "answer.validated",
+        "campaign.closed",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "zephyr-voice",
+      "name": "Zephyr Voice Notes",
+      "vendor": "Zephyr Telecom",
+      "category": "voice",
+      "summary": "Call-metadata and transcript intake from Zephyr.",
+      "status": "beta",
+      "version": "0.6.8",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "call.completed",
+        "transcript.generated",
+        "sentiment.scored",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "onyx-bank",
+      "name": "Onyx Bank Statements",
+      "vendor": "Onyx Financial",
+      "category": "finance",
+      "summary": "Statement and transaction retrieval for Onyx accounts.",
+      "status": "stable",
+      "version": "2.7.0",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "statement.available",
+        "transaction.posted",
+        "balance.reconciled",
+        "connector.health"
+      ],
+      "repository": "https://github.com/onyx-financial/onyx-bank"
+    },
+    {
+      "id": "maple-sms",
+      "name": "Maple SMS Gateway",
+      "vendor": "Maple Mobile",
+      "category": "messaging",
+      "summary": "Delivery receipts and opt-out sync for Maple SMS.",
+      "status": "stable",
+      "version": "1.4.3",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "message.delivered",
+        "optout.recorded",
+        "carrier.error",
+        "connector.health"
+      ]
+    },
+    {
+      "id": "legacy-ftp-bridge",
+      "name": "Legacy FTP Bridge",
+      "vendor": "Internal Platform",
+      "category": "file",
+      "summary": "Deprecated bridge for the retired on-prem FTP estate.",
+      "status": "deprecated",
+      "version": "0.3.1",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "file.received",
+        "file.failed",
+        "bridge.deprecated",
+        "connector.health"
+      ]
+    }
+  ]
+}
