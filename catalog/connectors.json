@@ -19,6 +19,7 @@
         "object.restore",
         "connector.health"
       ],
+      "docs": "docs/connectors/nimbus-s3-sync.md",
       "repository": "https://github.com/nimbus-cloud/nimbus-s3-sync"
     },
     {
@@ -38,6 +39,7 @@
         "cdc.snapshot",
         "connector.health"
       ],
+      "docs": "docs/connectors/riverbed-cdc.md",
       "repository": "https://github.com/riverbed-analytics/riverbed-cdc"
     },
     {
@@ -56,7 +58,8 @@
         "pipeline.stage_changed",
         "activity.logged",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/lattice-crm.md"
     },
     {
       "id": "quarry-postgres",
@@ -74,7 +77,8 @@
         "schema.drift_detected",
         "row.rejected",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/quarry-postgres.md"
     },
     {
       "id": "beacon-sftp",
@@ -93,6 +97,7 @@
         "manifest.emitted",
         "connector.health"
       ],
+      "docs": "docs/connectors/beacon-sftp.md",
       "repository": "https://github.com/beacon-transfer/beacon-sftp"
     },
     {
@@ -112,6 +117,7 @@
         "message.replayed",
         "connector.health"
       ],
+      "docs": "docs/connectors/cobalt-pubsub.md",
       "repository": "https://github.com/cobalt-messaging/cobalt-pubsub"
     },
     {
@@ -130,7 +136,8 @@
         "org_unit.changed",
         "termination.recorded",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/thistle-hris.md"
     },
     {
       "id": "amber-inventory",
@@ -148,7 +155,8 @@
         "stock.reserved",
         "stock.released",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/amber-inventory.md"
     },
     {
       "id": "vellum-contracts",
@@ -167,6 +175,7 @@
         "signature.status_changed",
         "connector.health"
       ],
+      "docs": "docs/connectors/vellum-contracts.md",
       "repository": "https://github.com/vellum-legal/vellum-contracts"
     },
     {
@@ -185,7 +194,8 @@
         "attribution.updated",
         "creative.paused",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/marigold-ads.md"
     },
     {
       "id": "sumac-payroll",
@@ -203,7 +213,8 @@
         "journal.exported",
         "cost_center.mapped",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/sumac-payroll.md"
     },
     {
       "id": "quartz-servicedesk",
@@ -221,7 +232,8 @@
         "ticket.escalated",
         "sla.breached",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/quartz-servicedesk.md"
     },
     {
       "id": "heron-warehouse",
@@ -240,6 +252,7 @@
         "permission.denied",
         "connector.health"
       ],
+      "docs": "docs/connectors/heron-warehouse.md",
       "repository": "https://github.com/heron-bi/heron-warehouse"
     },
     {
@@ -258,7 +271,8 @@
         "sprint.closed",
         "comment.added",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/driftwood-tracker.md"
     },
     {
       "id": "osprey-geo",
@@ -276,7 +290,8 @@
         "geometry.validated",
         "region.assigned",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/osprey-geo.md"
     },
     {
       "id": "tempest-monitor",
@@ -294,7 +309,8 @@
         "probe.recovered",
         "incident.opened",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/tempest-monitor.md"
     },
     {
       "id": "willow-docs",
@@ -313,6 +329,7 @@
         "acl.changed",
         "connector.health"
       ],
+      "docs": "docs/connectors/willow-docs.md",
       "repository": "https://github.com/willow-workspace/willow-docs"
     },
     {
@@ -331,7 +348,8 @@
         "metric.computed",
         "report.shared",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/jasper-analytics.md"
     },
     {
       "id": "flint-cache",
@@ -350,6 +368,7 @@
         "eviction.reported",
         "connector.health"
       ],
+      "docs": "docs/connectors/flint-cache.md",
       "repository": "https://github.com/flint-systems/flint-cache"
     },
     {
@@ -368,7 +387,8 @@
         "credit_note.created",
         "payment.settled",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/sapphire-billing.md"
     },
     {
       "id": "tundra-scm",
@@ -386,7 +406,8 @@
         "milestone.reached",
         "delay.flagged",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/tundra-scm.md"
     },
     {
       "id": "cinder-auth",
@@ -404,7 +425,8 @@
         "role.assigned",
         "login.risk_flagged",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/cinder-auth.md"
     },
     {
       "id": "pewter-queue",
@@ -423,6 +445,7 @@
         "backlog.reported",
         "connector.health"
       ],
+      "docs": "docs/connectors/pewter-queue.md",
       "repository": "https://github.com/pewter-systems/pewter-queue"
     },
     {
@@ -442,6 +465,7 @@
         "edge.redirect",
         "connector.health"
       ],
+      "docs": "docs/connectors/basalt-cdn.md",
       "repository": "https://github.com/basalt-edge/basalt-cdn"
     },
     {
@@ -460,7 +484,8 @@
         "notification.bounced",
         "template.updated",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/coral-notify.md"
     },
     {
       "id": "granite-survey",
@@ -478,7 +503,8 @@
         "answer.validated",
         "campaign.closed",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/granite-survey.md"
     },
     {
       "id": "zephyr-voice",
@@ -496,7 +522,8 @@
         "transcript.generated",
         "sentiment.scored",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/zephyr-voice.md"
     },
     {
       "id": "onyx-bank",
@@ -515,6 +542,7 @@
         "balance.reconciled",
         "connector.health"
       ],
+      "docs": "docs/connectors/onyx-bank.md",
       "repository": "https://github.com/onyx-financial/onyx-bank"
     },
     {
@@ -533,7 +561,8 @@
         "optout.recorded",
         "carrier.error",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/maple-sms.md"
     },
     {
       "id": "legacy-ftp-bridge",
@@ -551,7 +580,105 @@
         "file.failed",
         "bridge.deprecated",
         "connector.health"
-      ]
+      ],
+      "docs": "docs/connectors/legacy-ftp-bridge.md"
+    },
+    {
+      "id": "helios-ledger",
+      "name": "Helios Ledger Connector",
+      "vendor": "Helios Systems",
+      "category": "finance",
+      "summary": "General-ledger entry streaming with reversal tracking for Helios Ledger.",
+      "status": "stable",
+      "version": "4.2.0",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "ledger.entry_posted",
+        "ledger.entry_reversed",
+        "ledger.balance_snapshot",
+        "connector.health"
+      ],
+      "docs": "docs/connectors/helios-ledger.md",
+      "repository": "https://github.com/helios-systems/helios-ledger-connector"
+    },
+    {
+      "id": "ticketstream-desk",
+      "name": "TicketStream Desk Bridge",
+      "vendor": "TicketStream",
+      "category": "support",
+      "summary": "Agent-console ticket bridge with reopen and closure tracking for TicketStream.",
+      "status": "stable",
+      "version": "4.2.0",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "ticket.created",
+        "ticket.closed",
+        "ticket.reopened",
+        "connector.health"
+      ],
+      "docs": "docs/connectors/ticketstream-desk.md",
+      "repository": "https://github.com/ticketstream/ticketstream-desk-bridge"
+    },
+    {
+      "id": "cartloop-commerce",
+      "name": "CartLoop Commerce Funnel",
+      "vendor": "CartLoop",
+      "category": "commerce",
+      "summary": "Abandoned-cart, refund and stock funnel events for CartLoop storefronts.",
+      "status": "stable",
+      "version": "4.2.0",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "cart.abandoned",
+        "order.refunded",
+        "inventory.synced"
+      ],
+      "docs": "docs/connectors/cartloop-commerce.md"
+    },
+    {
+      "id": "metricmesh-metrics",
+      "name": "MetricMesh Metrics Pull",
+      "vendor": "MetricMesh",
+      "category": "analytics",
+      "summary": "Metric publication and retraction feed from MetricMesh workspaces.",
+      "status": "stable",
+      "version": "4.2.0",
+      "auth": [
+        "oauth2"
+      ],
+      "events": [
+        "metric.published",
+        "metric.retracted",
+        "dashboard.refreshed",
+        "connector.health"
+      ],
+      "docs": "docs/connectors/metricmesh-metrics.md"
+    },
+    {
+      "id": "queuewise-relay",
+      "name": "QueueWise Queue Relay",
+      "vendor": "QueueWise",
+      "category": "queue",
+      "summary": "Job lifecycle relay for QueueWise job queues.",
+      "status": "stable",
+      "version": "4.2.0",
+      "auth": [
+        "api_key"
+      ],
+      "events": [
+        "job.enqueued",
+        "job.failed",
+        "job.completed",
+        "connector.health"
+      ],
+      "docs": "docs/connectors/queuewise-relay.md",
+      "repository": "https://github.com/queuewise/queuewise-queue-relay"
     }
   ]
 }
